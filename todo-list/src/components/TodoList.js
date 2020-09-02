@@ -6,7 +6,7 @@ function TodoList() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = todo => {
-    if (!todo.text) {
+    if (!todo.text.trim()) {
       return;
     }
 
